@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
+  resources :categories
   resources :products
   get 'about', to: 'welcome#about_us'
   get 'contact', to: 'welcome#contact_us'
