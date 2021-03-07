@@ -11,6 +11,52 @@
   </head>
 
   <body>
+    <header class="containe">
+      <nav class="navbar navbar-expand-lg navbar-light mt-2">
+        <%= image_tag 'Logo.png', class: 'navbar-brand' %><%= link_to  "Demokratia-Komerc", root_path, class:"navbar-brand nav-link logo text-white" %>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item"><%= link_to  "Ballina | Дома | Home", root_path, class:"nav-link text-white" %></li>
+            <li class="nav-item"><%= link_to  "Reth Nesh | За Нас | About Us", about_path, class:"nav-link text-white" %></li>
+            <li class="nav-item"><%= link_to  "Kontakt | Контакт | Contact", contact_path, class:"nav-link text-white" %></li>
+            <li class="nav-item"><%= link_to  "Produktet | Производи | Product", products_path, class:"nav-link text-white" %></li>
+            <li class="nav-item"><%= link_to  "Panairet | Саем | Fair", categories_path, class:"nav-link text-white" %></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <%= yield %>
+    <footer>
+      <div class="containers">
+        <div class="back-to-top">
+          <a href="">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+        <div class="footer-content">
+          <div class=" animate-up">
+            <h4>About Demokratija - Komerc</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam temporibus, accusamus quos ut pariatur praesentium in dolor magnam quidem.</p>
+          </div>
+          <div class=" animate-bottom">
+            <div class="social-menu">
+              <h4>Follow us</h4>
+              <div class="social-icons">
+                <ul>
+                  <li><a href="https://www.instagram.com/gzim921/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://web.facebook.com/gzim.iseni95"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+              </div>
+              <div class="newsletter-container">
+                <h1>Made by: Gzim Iseni</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
